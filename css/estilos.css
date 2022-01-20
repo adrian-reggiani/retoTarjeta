@@ -95,12 +95,19 @@ body{
     font-weight: 900;    
 }
 
+.tarjeta__plan a:visited{
+    color:blue;
+}
+
 .tarjeta__plan a:hover{
     text-decoration: none;
     color: var(--violeta);
 }
 
+
+
 .tarjeta__pagar{
+    display: block;
     background-color: var(--azulBrillante);
     width: 250px;
     height: 25px;
@@ -111,19 +118,18 @@ body{
     font-size: 12px;
     font-weight: 700;
     box-shadow: 0 12px 15px var(--azulPalido);
-}
-
-.tarjeta__pagar a{
     text-decoration: none;
     color: white;
 }
 
-.tarjeta__pagar a{
-    text-decoration: none;
-    color: white;
+.tarjeta__pagar:hover{
+    background-color: var(--violeta);
+   
 }
+
 
 .tarjeta__cancelar{
+    display: block;
     width: 250px;
     height: 25px;
     margin-top:10px;
@@ -133,11 +139,19 @@ body{
     border-radius: 7px;
     text-align: center;
     font-size: 12px;
-    font-weight: 700;   
-    
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--azulDesaturado);       
 }
 
-.tarjeta__cancelar a {
-    text-decoration: none;
-    color: var(--azulDesaturado);
+.tarjeta__cancelar:hover{
+    color: black;
+}
+
+
+@media (max-width:375px){
+    body{
+        background-image: url(/images/pattern-background-mobile.svg);
+    }
+    
 }
