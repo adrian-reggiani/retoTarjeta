@@ -11,6 +11,7 @@
 body{
     background-image: url(/images/pattern-background-desktop.svg);
     background-repeat: no-repeat;
+    background-color: black;
     font-family: 'Red Hat Display', sans-serif;
     /*font-size: 16px; /* 1rem = 10px*/
     
@@ -59,8 +60,7 @@ body{
     display: flex;
     height: 60px;
     align-items: center;
-    
-    margin: 0 25px;
+    margin: 0 25px 10px;
     background-color: lightblue;
     font-size: 12px;
     border-radius: 15px;
@@ -86,4 +86,32 @@ body{
 .tarjeta__plan__texto p{
     font-weight: 500;
     color: var(--color_azulDesaturado);
+}
+
+.tarjeta__pagar{
+    background-color: var(--color_azulBrillante);
+    width: 250px;
+    height: 25px;
+    margin-left: 25px;
+    padding-top: 7px;
+    border-radius: 7px;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 700;
+    box-shadow: 0 12px black ;
+}
+
+.tarjeta__cancelar{
+    width: 250px;
+    height: 25px;
+    margin-top:10px;
+    margin-bottom: 10px;
+    margin-left: 25px;
+    padding-top: 7px;
+    border-radius: 7px;
+    color: var(--color_azulDesaturado);
+    text-align: center;
+    font-size: 12px;
+    font-weight: 700;
 }
