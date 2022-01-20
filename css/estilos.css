@@ -1,17 +1,19 @@
 :root{
-    --color_azulPalido: hsl(225, 100%, 94%);
-    --color_azulBrillante: hsl(245, 75%, 52%);
-    --color_azulIPalido: hsla(225, 100%, 94%, 0.30);
-    --color_azulMPalido: hsl(225, 100%, 98%);
-    --color_azulDesaturado:hsl(224, 23%, 55%);
-    --color_azulOscuro:hsl(223, 47%, 23%);
+    --azulPalido: hsl(225, 100%, 94%);
+    --azulBrillante: hsl(245, 75%, 52%);
+    --azulMPalido: hsl(225, 100%, 98%);
+    --azulDesaturado:hsl(224, 23%, 55%);
+    --azulOscuro:hsl(223, 47%, 23%);
+    --blanco: rgb(255, 255, 255);
+    --violeta: rgb(108,118,241);
 }
 
 
 body{
     background-image: url(/images/pattern-background-desktop.svg);
     background-repeat: no-repeat;
-    background-color: black;
+    background-size: contain;
+    background-color:  var(--azulPalido);
     font-family: 'Red Hat Display', sans-serif;
     /*font-size: 16px; /* 1rem = 10px*/
     
@@ -31,7 +33,7 @@ body{
 }
 
 .tarjeta{
-    background-color: var(--color_azulMPalido);
+    background-color: var(--blanco);
     border-radius: 15px;
 }
 
@@ -44,6 +46,7 @@ body{
 .tarjeta  h1 {
     text-align: center;
     font-weight: 700;
+    margin-bottom: 10px;
     font-size: 20px;
     padding: 0 5px;
 }
@@ -52,7 +55,7 @@ body{
     margin: 0 30px 15px;
     text-align: center;
     font-size: 12px;
-    color: var(--color_azulDesaturado);
+    color: var(--azulDesaturado);
     
 }
 
@@ -60,8 +63,8 @@ body{
     display: flex;
     height: 60px;
     align-items: center;
-    margin: 0 25px 10px;
-    background-color: lightblue;
+    margin: 0 25px 15px;
+    background-color: var(--azulMPalido);
     font-size: 12px;
     border-radius: 15px;
 
@@ -85,21 +88,39 @@ body{
 
 .tarjeta__plan__texto p{
     font-weight: 500;
-    color: var(--color_azulDesaturado);
+    color: var(--azulDesaturado);
+}
+
+.tarjeta__plan a{
+    font-weight: 900;    
+}
+
+.tarjeta__plan a:hover{
+    text-decoration: none;
+    color: var(--violeta);
 }
 
 .tarjeta__pagar{
-    background-color: var(--color_azulBrillante);
+    background-color: var(--azulBrillante);
     width: 250px;
     height: 25px;
     margin-left: 25px;
     padding-top: 7px;
     border-radius: 7px;
-    color: white;
     text-align: center;
     font-size: 12px;
     font-weight: 700;
-    box-shadow: 0 12px black ;
+    box-shadow: 0 12px 15px var(--azulPalido);
+}
+
+.tarjeta__pagar a{
+    text-decoration: none;
+    color: white;
+}
+
+.tarjeta__pagar a{
+    text-decoration: none;
+    color: white;
 }
 
 .tarjeta__cancelar{
@@ -110,8 +131,13 @@ body{
     margin-left: 25px;
     padding-top: 7px;
     border-radius: 7px;
-    color: var(--color_azulDesaturado);
     text-align: center;
     font-size: 12px;
-    font-weight: 700;
+    font-weight: 700;   
+    
+}
+
+.tarjeta__cancelar a {
+    text-decoration: none;
+    color: var(--azulDesaturado);
 }
