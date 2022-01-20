@@ -1,6 +1,7 @@
 :root{
     --color_azulPalido: hsl(225, 100%, 94%);
     --color_azulBrillante: hsl(245, 75%, 52%);
+    --color_azulIPalido: hsla(225, 100%, 94%, 0.30);
     --color_azulMPalido: hsl(225, 100%, 98%);
     --color_azulDesaturado:hsl(224, 23%, 55%);
     --color_azulOscuro:hsl(223, 47%, 23%);
@@ -19,17 +20,24 @@ body{
 
 .contenedor{
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /*indica la direccion de Justify content*/
     align-items: center;
     justify-content: center;
     width: 300px;
     margin: 75px auto;
+    
+    
+}
+
+.tarjeta{
     background-color: var(--color_azulMPalido);
+    border-radius: 15px;
 }
 
 .tarjeta__imagen{
     width:300px ;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
+    border-radius: 15px 15px 0px 0px;
 }
 
 .tarjeta  h1 {
@@ -40,7 +48,7 @@ body{
 }
 
 .tarjeta p{
-    margin: 0 30px 30px;
+    margin: 0 30px 15px;
     text-align: center;
     font-size: 12px;
     color: var(--color_azulDesaturado);
@@ -48,11 +56,34 @@ body{
 }
 
 .tarjeta__plan{
-    display:flex;
+    display: flex;
+    height: 60px;
     align-items: center;
-    justify-content: space-between;
+    
+    margin: 0 25px;
+    background-color: lightblue;
+    font-size: 12px;
+    border-radius: 15px;
+
+}
+.tarjeta__plan__musica{
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+} 
+
+.tarjeta__plan__texto{
+    line-height:20px;
+    margin: 10px 30px 0px -15px;
+    text-align: center;
+    
 }
 
+.tarjeta__plan__texto span{
+    font-weight: 700;
+}
 
-
-
+.tarjeta__plan__texto p{
+    font-weight: 500;
+    color: var(--color_azulDesaturado);
+}
